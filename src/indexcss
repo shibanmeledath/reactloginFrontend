@@ -1,0 +1,167 @@
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+/* Header Styles */
+header {
+  background-color: #007bff; /* Background color for the header */
+  color: white; /* Text color for the header */
+  padding: 1em 0; /* Padding for top and bottom */
+  text-align: center; /* Center the text */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for visual effect */
+}
+
+header h1 {
+  margin: 0; /* Remove default margin */
+  font-size: 2em; /* Set font size */
+  font-weight: normal; /* Set font weight */
+}
+h2{
+ 
+  color: #155724;
+}
+.homenav {
+  background-color: #007BFF; /* Background color */
+  padding: 10px; /* Padding around links */
+  display: flex; /* Flexbox layout for horizontal alignment */
+  justify-content: center; /* Center align items horizontally */
+}
+
+.homenav a {
+  color: #fff; /* Text color for links */
+  text-decoration: none; /* Remove underline from links */
+  margin: 0 10px; /* Margin between links */
+  padding: 5px 10px; /* Padding inside links */
+  border-radius: 5px; /* Rounded corners for links */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.homenav a:hover {
+  background-color: #0056b3; /* Darker background color on hover */
+}
+
+
+/* Form Styles */
+form {
+  max-width: 400px;
+  margin: 2em auto;
+  padding: 2em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  background-color: #f9f9f9;
+}
+
+.register h2,.login h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+form div {
+  margin-bottom: 1em;
+}
+
+form label {
+  margin-bottom: .5em;
+  color: #333;
+  display: block;
+}
+
+form input {
+  border: 1px solid #ccc;
+  padding: .5em;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form button {
+  padding: 0.7em;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 0.3em;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1em;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+form a {
+  display: block;
+  text-align: center;
+  margin-top: 1em;
+  color: #007bff;
+  text-decoration: none;
+}
+
+form a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #f1f1f1; /* Background color for the footer */
+  text-align: center; /* Center the text */
+  padding: 10px; /* Padding for the footer */
+  position: fixed; /* Fix the footer at the bottom */
+  bottom: 0; /* Position it at the bottom of the viewport */
+  width: 100%; /* Make it full width */
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for visual effect */
+}
+
+footer p {
+  margin: 0; /* Remove default margin */
+  color: #333; /* Text color */
+}
+
+/* Not Found Section Styles */
+.notfound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.notfound p {
+  font-size: 1.5em;
+  color: #333;
+}
+.message {
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.message.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.message .icon {
+  margin-right: 5px;
+}

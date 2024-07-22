@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+.rolls-royce{
+   
+    border: 2px solid black;
+    margin:auto;
+    border-radius: 2rem 2rem 0rem 0rem;
+    text-align: center;
+    max-width: 600px;
+    line-height: 5rem;
+    margin-top: 10px;
+    
+}
+.rolls-royce h2{
+    background-color: #05658f;
+    border-radius: 1.8rem 1.8rem 0rem 0rem;
+}
+li a{
+    display: block;
+
+    
+}
+li a,li a:visited{
+    text-decoration: none;
+    color: #05658f;
+}
+li a:hover,li a:focus{
+    background-color: #05658f;
+    color: #ccc;
+  
+}
+
+
+  #root {
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .content {
+    flex: 1;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #285687; /* Background color for the header */
+    color: white; /* Text color for the header */
+    padding: 1em 0; /* Padding for top and bottom */
+    text-align: center; /* Center the text */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for visual effect */
+  }
+  
+  header h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 2em; /* Set font size */
+    font-weight: normal; /* Set font weight */
+  }
+  
+  .homenav {
+    background-color: hsl(211, 54%, 34%); /* Background color */
+    padding: 10px; /* Padding around links */
+    display: flex; /* Flexbox layout for horizontal alignment */
+    justify-content:left; /* Center align items horizontally */
+  }
+  
+  .homenav a {
+    color: #fff; /* Text color for links */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 10px; /* Margin between links */
+    padding: 5px 10px; /* Padding inside links */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  .homenav a:hover {
+    background-color: hsl(205, 54%, 33%);
+
+    text-decoration: underline;/* Darker background color on hover */
+  }
+  
+  
+  /* Form Styles */
+  form {
+    max-width: 400px;
+    margin: auto;
+    padding: 2rem;
+    border: 1px solid hwb(0 62% 36% / 0.247);
+    border-radius: 1em;
+    background-color: #c3c3c334;
+  }
+  
+  .register h2,.login h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    color: #10764a;
+  }
+  
+  form div {
+    margin-bottom: 0.5em;
+  }
+  
+  form label {
+    margin-bottom: 0.5em;
+    color: #0c11a4;
+    display: block;
+  }
+  
+  form input {
+    border: 1px solid #fdfcff;
+    padding: 0.5em;
+    font-size: 1em;
+    width: 100%;
+   
+  }
+  
+  form button {
+    padding: 0.7em;
+    color: #fff;
+    background-color: #285687;
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+  }
+  
+  form a {
+    display: block;
+    text-align: center;
+    margin-top: 1em;
+    color: #0a4c04;
+    text-decoration: none;
+  }
+  
+  form a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #285687; /* Background color for the footer */
+    text-align: center; /* Center the text */
+    padding: 10px; /* Padding for the footer */
+    position:fixed; /* Fix the footer at the bottom */
+    bottom: 0; /* Position it at the bottom of the viewport */
+    width: 100%; /* Make it full width */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for visual effect */
+  }
+  
+  footer p {
+    margin: 0.5rem; /* Remove default margin */
+    color: #ffffff; /* Text color */
+  }
+  
+  /* Not Found Section Styles */
+  .notfound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .notfound p {
+    font-size: 1.5em;
+    color: #333;
+  }
+  .message {
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .message.success {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  .message .icon {
+    margin-right: 5px;
+  }
+  
+  .home{
+    color: #ffffff;
+    background-color: #285687;
+    display:flex;
+    justify-content: center;
+    }
+ul{
+list-style-type:none;
+
+
+}
+li{
+    border: 1px solid black;
+}
