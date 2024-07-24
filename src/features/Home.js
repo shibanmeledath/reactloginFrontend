@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-
+import List from './List';
 const Home = () => {
     const location = useLocation();
     const [username, setUsername] = useState('');
@@ -15,11 +15,12 @@ const Home = () => {
     }, [location]);
 
     return (
+        <>
         <div className='home'>
             <h2>Welcome, {username}!</h2>
-            
-    
         </div>
+        <List/>
+        </>
    
     );
 };

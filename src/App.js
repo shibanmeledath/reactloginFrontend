@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+
 import { Routes, Route, Navigate } from 'react-router-dom';
 import RegisterLayout from './layouts/RegisterLayout';
 import HomeLayout from './layouts/HomeLayout';
@@ -7,22 +7,10 @@ import Home from './features/Home';
 import RegisterForm from './features/Register';
 import LoginForm from './features/Login';
 import Logout from './features/Logout';
-import List from './features/List';
+
 
 const App = () => {
-    const [isAuthenticated, setIsAuthenticated] = useState(localStorage.getItem('token') !== null);
 
-    useEffect(() => {
-        const handleStorageChange = () => {
-            setIsAuthenticated(localStorage.getItem('token') !== null);
-        };
-
-        window.addEventListener('storage', handleStorageChange);
-
-        return () => {
-            window.removeEventListener('storage', handleStorageChange);
-        };
-    }, []);
 
     return (
         <div id="root">
@@ -33,9 +21,8 @@ const App = () => {
                         <Route path="/login" element={<LoginForm />} />
                         <Route path="*" element={<NotFound />} />
                     </Route>
-                    <Route path="/home" element={isAuthenticated ? <HomeLayout /> : <Navigate to="/" />}>
-                        <Route index element={
-                            <><Home /><List /></> } />
+                    <Route path="/home" element={ <HomeLayout />}>
+                        <Route index element={ <Home /> } />
                         <Route path='/home/logout' element={<Logout />} />
                     </Route>
                     <Route path="*" element={<Navigate to="/" />} />

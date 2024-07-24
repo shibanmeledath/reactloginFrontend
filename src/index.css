@@ -59,7 +59,7 @@ li a:hover,li a:focus{
   
   /* Header Styles */
   header {
-    background-color: #288753; /* Background color for the header */
+    background-color: #05658f; /* Background color for the header */
     color: white; /* Text color for the header */
     padding: 1em 0; /* Padding for top and bottom */
     text-align: center; /* Center the text */
@@ -158,7 +158,7 @@ li a:hover,li a:focus{
   
   /* Footer Styles */
   footer {
-    background-color: #288753; /* Background color for the footer */
+    background-color: #05658f; /* Background color for the footer */
     text-align: center; /* Center the text */
     padding: 10px; /* Padding for the footer */
     position:fixed; /* Fix the footer at the bottom */
